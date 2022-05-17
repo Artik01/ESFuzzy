@@ -1,0 +1,4 @@
+ES.xlsx - Visas tabulas ar informaciju par mainigiem
+KB.txt - Zinasanu baze (anglu valoda)
+ExpertSystemWithFuzzyLogic.go - pata programma texta veida izmantojot Golang programesanas valodu
+ExpertSystemWithFuzzyLogic.exe - pata programma

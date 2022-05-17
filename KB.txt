@@ -1,0 +1,18 @@
+01) IF brightness outside is dark AND (lamp brightness is turned off OR dark OR dim) THEN set lamp brightness to bright
+02) IF brightness outside is dim AND (lamp brightness is turned off OR dark OR dim) THEN set lamp brightness to avg brightness
+03) IF brightness outside is bright AND lamp brightness is NOT turned off THEN set lamp brightness to turned off
+04) IF brightness outside is avg brightness AND lamp brightness is NOT dim THEN set lamp brightness to dim
+
+05) IF (inside temperature is very cold OR cold) AND humidity is NOT wet THEN use air heater to heat up inside temperature to comfortable
+06) IF (inside temperature is very cold OR cold) AND humidity is wet THEN use air heater to heat up inside temperature to warm
+07) IF (inside temperature is hot OR very hot) AND humidity is dry THEN use AC to cool down inside temperature to comfortable
+08) IF (inside temperature is hot OR very hot) AND humidity is NOT dry THEN use AC to cool down inside temperature to warm
+
+09) IF humidity is dry THEN use humidifier to set humidity to comfortable
+10) IF humidity is wet THEN use dehumidifier to set humidity to comfortable
+
+11) IF WH temperature is NOT hot AND (inside temperature is cold OR very cold) AND humidity is NOT wet THEN set WH temperature to hot
+12) IF WH temperature is NOT hot AND (inside temperature is cold OR very cold) AND humidity is wet THEN set WH temperature to comfortable
+13) IF WH temperature is NOT comfortable AND (inside temperature is comfortable OR warm) THEN set WH temperature to comfortable
+14) IF WH temperature is NOT cold AND (inside temperature is hot OR very hot) AND humidity is NOT dry THEN set WH temperature to cold
+15) IF WH temperature is NOT cold AND (inside temperature is hot OR very hot) AND humidity is dry THEN set WH temperature to comfortable
